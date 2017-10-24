@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///F:/www/dianlf/Application/Home/View/Index/settimeout.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>seTimeout,8</title>
+</head>
+<body>
+
+<script type="text/javascript">
+   var timer = 0;
+    setTimeTIps();
+    function setTimeTIps(){
+
+      setTimeout(function(){
+
+              timer++
+              if(timer<8){
+                setTimeTIps();
+              }else{
+                alert(111);
+                clearTimeout(setTimeTIps);
+              }
+      },1000);
+    }
+</script>
+
+</body></html>
